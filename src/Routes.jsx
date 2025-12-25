@@ -23,7 +23,7 @@ const ProjectRoutes = ()=>{
 
         if(!userIdFromStorage && !["/auth", "/signup"].includes(window.location.pathname))
         {
-            navigate("/Dashboard");
+            navigate("/auth");
         }
 
         if(userIdFromStorage && window.location.pathname=='/auth'){
